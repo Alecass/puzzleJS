@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  font-family: "Luckiest Guy", cursive;
+  overflow: hidden;
+}
+
+.container {
+  padding: 40px;
+  border: solid groove;
+  background: radial-gradient(
+    circle,
+    rgba(57, 0, 40, 1) 0%,
+    rgba(108, 108, 108, 1) 100%
+  );
+  border-width: 2rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 600px;
+  height: 600px;
+  z-index: -1000;
+  border-spacing: 10px;
+}
+
+.number {
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  padding-top: 30px;
+  text-align: center;
+  width: 30.66%;
+  border: solid burlywood;
+  border-width: 0.5rem;
+  color: burlywood;
+  /* animation: zoomIn 0.2s ease; */
+  font-size: 100px;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.number:hover {
+  z-index: 100;
+  transform: scale(1.2);
+}
+.number::after {
+  transform: scale(0.5);
+}
+
+.number-to-reach {
+  text-align: center;
+  font-size: 100px;
+}
